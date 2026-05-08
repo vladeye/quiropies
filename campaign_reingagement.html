@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Quiropies | La Doctora Piecitos se muda a La Floresta 🦶✨</title>
+  <style type="text/css">
+    body, table, td, p, a, div, span {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f2ef;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .header-bg {
+      background: linear-gradient(135deg, #1e3f3a 0%, #2a5a52 100%);
+      padding: 0px 20px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    .doctora-photo-container {
+      text-align: center;
+      margin-top: -40px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 10;
+    }
+    .doctora-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background-color: #e8f3ef;
+    }
+    .content-padding {
+      padding: 20px 28px 36px 28px;
+    }
+    h1 {
+      font-size: 32px;
+      color: #1e3f3a;
+      margin-bottom: 8px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .doctora-badge {
+      display: inline-block;
+      background-color: #f5d6b3;
+      color: #1e3f3a;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .intro-text {
+      text-align: center;
+      font-size: 16px;
+      color: #5c7b6e;
+      margin-bottom: 24px;
+    }
+    .highlight-box {
+      background-color: #fef7e8;
+      border-radius: 24px;
+      padding: 24px;
+      margin: 24px 0;
+      border: 1px solid #f0e2ce;
+      text-align: center;
+    }
+    .discount-number {
+      font-size: 52px;
+      font-weight: 800;
+      color: #e07c3c;
+      line-height: 1;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .discount-percent {
+      font-size: 28px;
+      font-weight: 800;
+      color: #e07c3c;
+    }
+    .btn-primary {
+      background-color: #e07c3c;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 16px 36px;
+      display: inline-block;
+      border-radius: 60px;
+      font-size: 18px;
+      margin: 16px 0 8px;
+      transition: all 0.2s;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(224,124,60,0.3);
+    }
+    .btn-primary:hover {
+      background-color: #c2632a;
+      transform: scale(1.02);
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: #1e3f3a !important;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 24px;
+      display: inline-block;
+      border-radius: 60px;
+      font-size: 15px;
+      border: 2px solid #1e3f3a;
+      margin-top: 8px;
+    }
+    .footer {
+      background-color: #faf8f5;
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #8faa9f;
+      border-top: 1px solid #e8e0d5;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #e8e0d5;
+      margin: 24px 0;
+    }
+    .location-highlight {
+      background-color: #e8f3ef;
+      padding: 12px 20px;
+      border-radius: 60px;
+      display: inline-block;
+      font-weight: 700;
+      color: #1e3f3a;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      margin: 16px 0;
+    }
+    .feature-item {
+      flex: 1;
+      min-width: 100px;
+      text-align: center;
+    }
+    .feature-emoji {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .feature-text {
+      font-size: 12px;
+      font-weight: 600;
+      color: #1e3f3a;
+    }
+    .quote {
+      background-color: #fef7e8;
+      border-radius: 30px;
+      padding: 14px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      font-style: italic;
+      color: #5c7b6e;
+    }
+    @media only screen and (max-width: 550px) {
+      .content-padding {
+        padding: 20px 20px 28px 20px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      .btn-primary, .btn-secondary {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+      .discount-number {
+        font-size: 42px;
+      }
+      .doctora-photo {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f2ef;">
+
+  <center style="width:100%;table-layout:fixed;">
+    <div style="max-width:600px;margin:20px auto;">
+
+      <div class="email-container">
+
+        <div class="header-bg">
+          <img src="img/logo_dark_background.png" alt="Quiropies" class="logo" style="max-width:350px; width:200%; height:auto;">
+        </div>
+
+        <!-- DOCTORA PHOTO - REPLACE THIS URL -->
+        <div class="doctora-photo-container">
+          <img src="img/doc_piecitos.png" alt="La Doctora Piecitos" class="doctora-photo">
+        </div>
+
+        <div class="content-padding">
+
+          <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+            <div class="emoji" style="font-size: 28px;">🦶</div>
+            <div class="emoji" style="font-size: 28px;">✨</div>
+            <div class="emoji" style="font-size: 28px;">🏡</div>
+          </div>
+
+          <div style="text-align: center;">
+            <span class="doctora-badge">🌟 MOVIMIENTO ESPECIAL 🌟</span>
+          </div>
+
+          <h1>La Doctora Piecitos<br>se muda a La Floresta</h1>
+
+          <p class="intro-text">Y solo va a atender <strong>en esta sucursal</strong>.</p>
+
+          <p><strong>La Doctora Piecitos</strong> es el corazón de Quiropies. La que mejor conoce tus pies. La que ha cuidado de ti desde el primer día.</p>
+
+          <p>Ahora tiene una nueva casa: <strong>La Floresta</strong>. Y no es cualquier mudanza. Esta es la <strong>única sucursal con el respaldo completo de la marca Quiropies</strong>. El mismo equipo certificado, la misma calidad, el mismo cariño… pero en un solo lugar.</p>
+
+          <div style="text-align: center;">
+            <div class="location-highlight">
+              📍 La Floresta – Única sede con respaldo Quiropies
+            </div>
+          </div>
+
+          <div class="highlight-box">
+            <div style="font-size: 14px; font-weight: 600; color: #e07c3c; margin-bottom: 8px;">🎁 OFERTA DE BIENVENIDA</div>
+            <div>
+              <span class="discount-number">25%</span>
+              <span class="discount-percent">OFF</span>
+            </div>
+            <div style="font-size: 16px; font-weight: 600; margin: 12px 0 4px;">Para todos los que agenden esta semana</div>
+            <div style="font-size: 13px; color: #8faa9f;">Cupos limitados – La Doctora Piecitos te espera</div>
+          </div>
+
+          <div style="text-align: center; margin: 28px 0 16px;">
+            <a href="#" class="btn-primary" style="color:#ffffff !important;">📅 AGENDAR CON LA DOCTORA</a>
+            <p style="font-size: 13px; margin-top: 12px; color: #8faa9f;">⏰ Solo esta semana • 25% OFF • Cupos limitados</p>
+          </div>
+
+          <hr>
+
+          <div class="feature-grid">
+            <div class="feature-item">
+              <span class="feature-emoji">🦶</span>
+              <span class="feature-text">Quiropedia Integral</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-emoji">✅</span>
+              <span class="feature-text">Respaldo Quiropies</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-emoji">⏰</span>
+              <span class="feature-text">Solo esta semana</span>
+            </div>
+          </div>
+
+          <hr>
+
+          <p style="text-align: center; font-size: 14px; margin-top: 8px;">📞 <strong>+57 123 456 7890</strong> | 📧 <strong>hola@quiropies.com</strong><br>
+          📍 La Floresta – única sede con respaldo Quiropies</p>
+
+          <div class="quote">
+            💬 "Volver a caminar sin dolor no tiene precio. Pero esta semana, tiene 25% OFF."<br>
+            — <strong>La Doctora Piecitos</strong> 🦶✨
+          </div>
+
+        </div>
+
+        <div class="footer">
+          <p style="margin:0 0 12px 0; font-size:12px;">Quiropies - Servicios Profesionales de Podología<br>Equipo certificado, dedicado exclusivamente al bienestar de tus pies.</p>
+          <p style="font-size:11px;">
+            <a href="#" style="color:#8faa9f; text-decoration:underline;">Darme de baja</a> | 
+            <a href="#" style="color:#8faa9f; text-decoration:underline;">Política de privacidad</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </center>
+</body>
+</html>
